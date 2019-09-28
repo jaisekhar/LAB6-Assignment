@@ -38,7 +38,6 @@ var update_Customers = (id, name, email) => {
     var customers = fetchCustomers();
     var customer = {id,name,email};
     var index = customers.findIndex(obj => obj.id==id);
-    console.log(index);
 
     if (index != -1){
         customers[index].name=name;
